@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 import "../index.css";
 
 function Section({
@@ -11,15 +12,19 @@ function Section({
 }) {
   return (
     <Wrap bgImage={BackgroundImg}>
-      <ItemText>
-        <h1>{title}</h1>
-        <p>{description}</p>
-      </ItemText>
+      <Fade bottom>
+        <ItemText>
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </ItemText>
+      </Fade>
       <Buttons>
-        <ButtonGroup>
-          <LeftButton>{leftBtnText}</LeftButton>
-          {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
-        </ButtonGroup>
+        <Fade bottom>
+          <ButtonGroup>
+            <LeftButton>{leftBtnText}</LeftButton>
+            {rightBtnText && <RightButton>{rightBtnText}</RightButton>}
+          </ButtonGroup>
+        </Fade>
         <DownArrow src="/images/down-arrow.svg" />
         {/* <i class="fas fa-chevron-down"></i> */}
       </Buttons>
@@ -39,6 +44,7 @@ const Wrap = styled.div`
   justify-content: space-between; //vertical aligns
   align-items: center; //horizontal
   background-image: ${(props) => `url("/images/${props.bgImage}")`};
+  image-rendering: pixelated;
 `;
 const ItemText = styled.div`
   padding-top: 15vh;
@@ -75,7 +81,7 @@ const RightButton = styled(LeftButton)`
 `;
 
 const DownArrow = styled.img`
-  height: 40px;
+  height: 50px;
   margin: 0 auto;
   display: flex;
   overflow-x: hidden;

@@ -5,9 +5,17 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
 body {
   width: 100%;
   overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
 }
 /* i {
     color: black;

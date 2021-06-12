@@ -16,8 +16,8 @@ function Home() {
         title="Model Y"
         description="Order Online for Touchless Delivery"
         BackgroundImg="model-y.jpg"
-        leftBtnText="CUSTOM ORDER"
-        rightBtnText="EXISTING INVENTORY"
+        leftBtnText="Custom Order"
+        rightBtnText="Existing Inventory"
       />
       <Section
         title="Model 3"
@@ -49,10 +49,8 @@ function Home() {
       />
       <Section
         title="Accessories"
-        description=""
         BackgroundImg="accessories.jpg"
-        leftBtnText="Shop Now"
-       
+        leftBtnText="Shop Now"    
       />
     </Container>
   );
