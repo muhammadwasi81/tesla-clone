@@ -6,11 +6,11 @@ import Section from './components/Section';
 
 function App() {
   return (
-   <div>
-     <Header />
-     <Home />
-     <Section />
-   </div>
+    <div>
+      <Header />
+      <Home />
+      <Section />
+    </div>
   );
 }
 

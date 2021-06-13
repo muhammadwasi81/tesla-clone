@@ -1,34 +1,35 @@
 import React from "react";
 import styled from "styled-components";
 import Section from "./Section";
+import '../index.css';
 
 function Home() {
   return (
     <Container>
       <Section
         title="Model S"
-        description="Order Online for Touchless Delivery"
+        description="Order Online for"
         BackgroundImg="model-s.jpg"
         leftBtnText="CUSTOM ORDER"
         rightBtnText="EXISTING INVENTORY"
       />
       <Section
         title="Model Y"
-        description="Order Online for Touchless Delivery"
+        description="Order Online for"
         BackgroundImg="model-y.jpg"
         leftBtnText="Custom Order"
-        rightBtnText="Existing Inventory"
+        rightBtnText="EXISTING INVENTORY"
       />
       <Section
         title="Model 3"
-        description="Order Online for Touchless Delivery"
+        description="Order Online for"
         BackgroundImg="model-3.jpg"
         leftBtnText="CUSTOM ORDER"
         rightBtnText="EXISTING INVENTORY"
       />
       <Section
         title="Model X"
-        description="Order Online for Touchless Delivery"
+        description="Order Online for"
         BackgroundImg="model-x.jpg"
         leftBtnText="CUSTOM ORDER"
         rightBtnText="EXISTING INVENTORY"
@@ -49,8 +50,10 @@ function Home() {
       />
       <Section
         title="Accessories"
+        description=""
         BackgroundImg="accessories.jpg"
-        leftBtnText="Shop Now"    
+        leftBtnText="Shop Now"
+        rightBtnText=""
       />
     </Container>
   );
@@ -59,4 +62,5 @@ function Home() {
 const Container = styled.div`
   height: 100vh;
 `;
+  
 export default Home;
